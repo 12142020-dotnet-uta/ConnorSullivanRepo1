@@ -14,11 +14,17 @@ namespace HelloWorld
             int len = response.Length;
             Console.WriteLine($"Your response was '{response}'");
             Console.WriteLine($"Your response was '{len}' characters long");
-            for (int i = 0; i < len; i++)
-            {
-                Console.WriteLine($"{i + 1}: {response[i]}");
-            }
-            ;
+            // Print every character line by line
+            for (int i = 0; i < len; i++) 
+                if (Char.ToString(response[i]) == " ")
+                {
+                    Console.WriteLine($"{i + 1}: Empty Space Entered");
+                }
+                else
+                {
+                    Console.WriteLine($"{i + 1}: {response[i]}");
+                };
+            
         }
     }
 }
