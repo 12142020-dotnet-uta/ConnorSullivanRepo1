@@ -10,6 +10,6 @@ namespace rps_multiple_users
         public Choice Player1Choice { get; set; } // cpu
         public Choice Player2Choice { get; set; } // player
 
-        public Player WinningPlayer { get; set; } = null; // assign who won
+        public Player WinningPlayer { get; set; } = null; // assign who won, null for tie
     }
 }

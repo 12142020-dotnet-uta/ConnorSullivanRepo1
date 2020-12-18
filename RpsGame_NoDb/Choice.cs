@@ -1,7 +1,6 @@
-namespace rps_multiple_users
-
+namespace Group_Rps
 {
-    public enum Choice {
+    public enum Choice{
         Rock,
         Paper,
         Scissors
