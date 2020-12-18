@@ -141,7 +141,7 @@ namespace Group_Rps
             string[] userNamesArray;
             do
             {
-                Console.WriteLine("\nPlease enter your first name.\n If you enter unique first and last name I will create a new player.\n");
+                Console.WriteLine("\nPlease enter your first and last name.\n If you enter unique first and last name I will create a new player.\n");
                 string userNames = Console.ReadLine();
                 userNamesArray = userNames.Split(' ');
             } while (userNamesArray[0] == "");
